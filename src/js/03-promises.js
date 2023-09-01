@@ -12,7 +12,7 @@ function onSubmitForm(event) {
     Notiflix.Notify.warning(`❗ Please enter a positive number`);
   } else {
     for (let position = 1; position < amount.value; position++) {
-      const delays = Number(delay.value) + step.value * i;
+      const delays = Number(delay.value) + step.value * position ;
 
       createPromise(position, delays)
         .then(({ position, delay }) => {

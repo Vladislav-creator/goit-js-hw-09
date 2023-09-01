@@ -5,7 +5,7 @@ const bodyEl = document.body;
 const btnStart = document.querySelector('button[data-start]');
 const btnStop = document.querySelector('button[data-stop]');
   let timerId = null;
-  onBodyColorChange = () => {
+  const onBodyColorChange = () => {
     btnStart.disabled = 'true'
     btnStop.removeAttribute("disabled")
      timerId = setInterval(() => {
